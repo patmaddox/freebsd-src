@@ -784,6 +784,7 @@ MLINKS+=${_nfe.4} ${_if_nfe.4}
 MLINKS+=nge.4 if_nge.4
 MLINKS+=openfirm.4 openfirmware.4
 MLINKS+=ow.4 onewire.4
+MLINKS+=p9fs.4 virtio_p9fs.4
 MLINKS+=pccbb.4 cbb.4
 MLINKS+=pcm.4 snd.4 \
 	pcm.4 sound.4
@@ -1017,18 +1018,21 @@ _ccd.4=		ccd.4
 _dtrace_provs=	dtrace_audit.4 \
 		dtrace_callout_execute.4 \
 		dtrace_cam.4 \
+		dtrace_dtmalloc.4 \
 		dtrace_dtrace.4 \
 		dtrace_fbt.4 \
 		dtrace_io.4 \
 		dtrace_ip.4 \
 		dtrace_kinst.4 \
 		dtrace_lockstat.4 \
+		dtrace_mib.4 \
 		dtrace_pid.4 \
 		dtrace_priv.4 \
 		dtrace_proc.4 \
 		dtrace_profile.4 \
 		dtrace_sched.4 \
 		dtrace_sctp.4 \
+		dtrace_syscall.4 \
 		dtrace_tcp.4 \
 		dtrace_udp.4 \
 		dtrace_udplite.4 \

@@ -129,12 +129,12 @@ beforecheck:
 	@cd ${.CURDIR} && ${MAKE} install \
 	    DESTDIR=${DESTDIR}
 
-# NOTE: this is intentional to ensure that "make check" can be run multiple
-#       times. "aftercheck" won't be run if "make check" fails, is interrupted,
-#       etc.
+# NOTE: "aftercheck" is a separate target so that it will not clean
+#       DESTDIR if "make check" fails, is interrupted, etc. This lets the
+#       developer inspect DESTDIR if needed.
 aftercheck:
-	@cd ${.CURDIR} && ${MAKE} clean
 	@test ! -e ${DESTDIR} || chflags -R 0 "${DESTDIR}"
+	@cd ${.CURDIR} && ${MAKE} clean
 	@rm -Rf "${DESTDIR}"
 
 .endif

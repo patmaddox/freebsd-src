@@ -30,6 +30,7 @@ _PRIVATELIBS=	\
 		kldelf \
 		ldns \
 		opencsd \
+		pkgconf \
 		samplerate \
 		sqlite3 \
 		ssh \
@@ -166,6 +167,7 @@ _LIBRARIES=	\
 		heimbase \
 		heimntlm \
 		heimsqlite \
+		hello \
 		hx509 \
 		icp \
 		ipsec \
