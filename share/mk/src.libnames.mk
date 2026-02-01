@@ -167,6 +167,7 @@ _LIBRARIES=	\
 		heimbase \
 		heimntlm \
 		heimsqlite \
+		hello \
 		hx509 \
 		icp \
 		ipsec \
